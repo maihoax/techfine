@@ -1,0 +1,76 @@
+; Universal MACD Pro EA Settings
+; Symbol: XAUUSD (Gold)
+; Timeframe: M15
+; Style: Aggressive - Higher Risk, More Trades
+
+EntryTimeframe=16385
+TrendTimeframe=16388
+ConfirmTimeframe=16384
+TradeOnlyWithTrend=true
+UseMultiTFConfirmation=false
+
+; MACD Settings
+MACD_Fast=10
+MACD_Slow=22
+MACD_Signal=7
+UseAdaptiveMACD=true
+AdaptiveMultiplier=0.7
+
+; RSI Filter
+UseRSIFilter=true
+RSI_Period=14
+RSI_Overbought=75
+RSI_Oversold=25
+
+; ATR Settings
+ATR_Period=14
+ATR_StopLoss_Multi=2.0
+ATR_TakeProfit1_Multi=1.5
+ATR_TakeProfit2_Multi=3.0
+ATR_TakeProfit3_Multi=5.0
+ATR_Trail_Multi=1.2
+
+; Risk Management - AGGRESSIVE
+RiskPercent=1.5
+MaxDailyRisk=5.0
+MaxDrawdown=10.0
+RecoveryRiskReduction=0.6
+MaxTradesPerDay=15
+MaxConcurrentTrades=2
+
+; Partial Profits
+UsePartialProfits=true
+PartialClose_TP1=40.0
+PartialClose_TP2=30.0
+MoveToBreakevenAtTP1=true
+
+; Session Filters
+TradeAsianSession=false
+TradeLondonSession=true
+TradeNYSession=true
+AvoidFridayAfter=true
+FridayCloseHour=21
+
+; News Filter
+UseNewsFilter=true
+NewsBufferMinutes=45
+
+; Entry Filters - RELAXED
+RequireVolatilityExpansion=false
+RequireMACD_ZeroCross=false
+MinMACDHistogram=0.0
+MaxBarsFromCross=5
+
+; Exit Strategy
+ExitOnOppositeSignal=true
+ExitOnHistogramReversal=false
+UseTrailingStop=true
+UseTimeBasedExit=false
+MaxBarsInTrade=150
+
+; System
+MagicNumber=202512002
+TradeComment=MACD_Pro_GOLD_AGG
+ShowDashboard=true
+DashboardCorner=1
+DashboardColor=65280
