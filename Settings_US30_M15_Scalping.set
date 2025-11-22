@@ -1,0 +1,76 @@
+; Universal MACD Pro EA Settings
+; Symbol: US30 (Dow Jones)
+; Timeframe: M15
+; Style: Scalping - Quick Profits
+
+EntryTimeframe=16385
+TrendTimeframe=16388
+ConfirmTimeframe=16384
+TradeOnlyWithTrend=true
+UseMultiTFConfirmation=true
+
+; MACD Settings - Faster
+MACD_Fast=8
+MACD_Slow=17
+MACD_Signal=6
+UseAdaptiveMACD=true
+AdaptiveMultiplier=0.6
+
+; RSI Filter
+UseRSIFilter=true
+RSI_Period=10
+RSI_Overbought=72
+RSI_Oversold=28
+
+; ATR Settings - Tighter Targets
+ATR_Period=14
+ATR_StopLoss_Multi=2.5
+ATR_TakeProfit1_Multi=1.5
+ATR_TakeProfit2_Multi=2.5
+ATR_TakeProfit3_Multi=4.0
+ATR_Trail_Multi=1.0
+
+; Risk Management
+RiskPercent=0.5
+MaxDailyRisk=2.0
+MaxDrawdown=6.0
+RecoveryRiskReduction=0.4
+MaxTradesPerDay=20
+MaxConcurrentTrades=1
+
+; Partial Profits - Faster Scaling
+UsePartialProfits=true
+PartialClose_TP1=50.0
+PartialClose_TP2=50.0
+MoveToBreakevenAtTP1=true
+
+; Session Filters - NY Only
+TradeAsianSession=false
+TradeLondonSession=false
+TradeNYSession=true
+AvoidFridayAfter=true
+FridayCloseHour=20
+
+; News Filter
+UseNewsFilter=true
+NewsBufferMinutes=90
+
+; Entry Filters
+RequireVolatilityExpansion=true
+RequireMACD_ZeroCross=false
+MinMACDHistogram=0.0
+MaxBarsFromCross=2
+
+; Exit Strategy - Quick Exits
+ExitOnOppositeSignal=true
+ExitOnHistogramReversal=true
+UseTrailingStop=true
+UseTimeBasedExit=true
+MaxBarsInTrade=50
+
+; System
+MagicNumber=202512004
+TradeComment=MACD_Pro_US30
+ShowDashboard=true
+DashboardCorner=1
+DashboardColor=65280

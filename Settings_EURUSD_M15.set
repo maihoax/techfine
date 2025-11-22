@@ -1,0 +1,76 @@
+; Universal MACD Pro EA Settings
+; Symbol: EURUSD
+; Timeframe: M15
+; Style: Balanced - Forex Optimized
+
+EntryTimeframe=16385
+TrendTimeframe=16388
+ConfirmTimeframe=16385
+TradeOnlyWithTrend=true
+UseMultiTFConfirmation=true
+
+; MACD Settings
+MACD_Fast=12
+MACD_Slow=26
+MACD_Signal=9
+UseAdaptiveMACD=true
+AdaptiveMultiplier=0.4
+
+; RSI Filter
+UseRSIFilter=true
+RSI_Period=14
+RSI_Overbought=70
+RSI_Oversold=30
+
+; ATR Settings
+ATR_Period=14
+ATR_StopLoss_Multi=2.0
+ATR_TakeProfit1_Multi=2.0
+ATR_TakeProfit2_Multi=4.0
+ATR_TakeProfit3_Multi=6.0
+ATR_Trail_Multi=1.5
+
+; Risk Management
+RiskPercent=1.0
+MaxDailyRisk=3.0
+MaxDrawdown=7.0
+RecoveryRiskReduction=0.5
+MaxTradesPerDay=12
+MaxConcurrentTrades=1
+
+; Partial Profits
+UsePartialProfits=true
+PartialClose_TP1=33.0
+PartialClose_TP2=33.0
+MoveToBreakevenAtTP1=true
+
+; Session Filters
+TradeAsianSession=false
+TradeLondonSession=true
+TradeNYSession=true
+AvoidFridayAfter=true
+FridayCloseHour=20
+
+; News Filter
+UseNewsFilter=true
+NewsBufferMinutes=60
+
+; Entry Filters
+RequireVolatilityExpansion=true
+RequireMACD_ZeroCross=false
+MinMACDHistogram=0.0
+MaxBarsFromCross=3
+
+; Exit Strategy
+ExitOnOppositeSignal=true
+ExitOnHistogramReversal=true
+UseTrailingStop=true
+UseTimeBasedExit=false
+MaxBarsInTrade=120
+
+; System
+MagicNumber=202512003
+TradeComment=MACD_Pro_EUR
+ShowDashboard=true
+DashboardCorner=1
+DashboardColor=65280
